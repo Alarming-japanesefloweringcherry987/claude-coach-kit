@@ -1,13 +1,13 @@
 <div align="center">
-  <h1>🚀 Claude Coach Kit</h1>
+  <h1>🚀 Coach Automation Kit</h1>
   <p><strong>Open-source marketing automation for coaches, consultants & solopreneurs</strong></p>
-  <p>Stop paying $500+/month for marketing tools. Claude Coach Kit gives you everything — for free.</p>
+  <p>Stop paying $500+/month for marketing tools. Coach Automation Kit gives you everything — for free.</p>
 
   <p>
-    <a href="https://github.com/krishna-build/claude-coach-kit/stargazers"><img src="https://img.shields.io/github/stars/krishna-build/claude-coach-kit?style=social" alt="Stars"></a>
-    <a href="https://github.com/krishna-build/claude-coach-kit/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
-    <a href="https://github.com/krishna-build/claude-coach-kit/issues"><img src="https://img.shields.io/github/issues/krishna-build/claude-coach-kit" alt="Issues"></a>
-    <img src="https://img.shields.io/badge/Built%20with-Claude-blueviolet" alt="Built with Claude">
+    <a href="https://github.com/krishna-build/coach-automation-kit/stargazers"><img src="https://img.shields.io/github/stars/krishna-build/coach-automation-kit?style=social" alt="Stars"></a>
+    <a href="https://github.com/krishna-build/coach-automation-kit/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
+    <a href="https://github.com/krishna-build/coach-automation-kit/issues"><img src="https://img.shields.io/github/issues/krishna-build/coach-automation-kit" alt="Issues"></a>
+    <img src="https://img.shields.io/badge/Built%20with-AI-blueviolet" alt="Built with AI">
     <img src="https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=white" alt="Supabase">
     <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black" alt="React">
   </p>
@@ -23,11 +23,11 @@
 
 ---
 
-## 💡 Why Claude Coach Kit?
+## 💡 Why Coach Automation Kit?
 
-Most coaches and solopreneurs pay **$200-500/month** for tools like HubSpot, ActiveCampaign, or ConvertKit. Claude Coach Kit replaces all of them with a **single open-source toolkit** that you own and control.
+Most coaches and solopreneurs pay **$200-500/month** for tools like HubSpot, ActiveCampaign, or ConvertKit. Coach Automation Kit replaces all of them with a **single open-source toolkit** that you own and control.
 
-| Feature | HubSpot | ConvertKit | Claude Coach Kit |
+| Feature | HubSpot | ConvertKit | Coach Automation Kit |
 |---------|---------|------------|----------|
 | Email sequences | ✅ $800/mo | ✅ $66/mo | ✅ **Free** |
 | Payment tracking | ❌ | ❌ | ✅ **Free** |
@@ -138,7 +138,7 @@ Most coaches and solopreneurs pay **$200-500/month** for tools like HubSpot, Act
 
 ```bash
 # Clone the repository
-git clone https://github.com/krishna-build/claude-coach-kit.git
+git clone https://github.com/krishna-build/coach-automation-kit.git
 cd coachkit
 
 # Install dependencies
@@ -245,11 +245,11 @@ git push origin feature/your-feature
 
 ## 💬 Story
 
-> "I'm a solo entrepreneur from India. I needed marketing automation for my coaching clients but couldn't afford HubSpot or ActiveCampaign. So I built Claude Coach Kit with AI as my development partner. No team, no funding — just one person and an AI. Now I'm open-sourcing it so every coach and solopreneur can have enterprise-grade automation for free."
+> "I'm a solo entrepreneur from India. I needed marketing automation for my coaching clients but couldn't afford HubSpot or ActiveCampaign. So I built Coach Automation Kit with AI as my development partner. No team, no funding — just one person and an AI. Now I'm open-sourcing it so every coach and solopreneur can have enterprise-grade automation for free."
 
 ---
 
 <div align="center">
-  <p><strong>If Claude Coach Kit saves you money, give it a ⭐</strong></p>
+  <p><strong>If Coach Automation Kit saves you money, give it a ⭐</strong></p>
   <p>Made with ❤️ in India</p>
 </div>
