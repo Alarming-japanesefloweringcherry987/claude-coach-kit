@@ -245,7 +245,7 @@ git push origin feature/your-feature
 
 ## 💬 Story
 
-> "I'm a solo entrepreneur from India. I needed marketing automation for my coaching clients but couldn't afford HubSpot or ActiveCampaign. So I built CoachKit with AI as my development partner. No team, no funding — just one person and an AI. Now I'm open-sourcing it so every coach and solopreneur can have enterprise-grade automation for free."
+> "I'm a solo entrepreneur from India. I needed marketing automation for my coaching clients but couldn't afford HubSpot or ActiveCampaign. So I built CoachKit with Claude as my AI development partner. No team, no funding — just one person and an AI. Now I'm open-sourcing it so every coach and solopreneur can have enterprise-grade automation for free."
 
 ---
 
